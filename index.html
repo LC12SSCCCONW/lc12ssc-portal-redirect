@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LC12SSC Response Boat Portal</title>
+
+  <script>
+    const mobileURL =
+      "https://script.google.com/macros/s/AKfycbycK_adgVu5gP7IocAo19ok1vnmu7sQJYLDE8YZqiSgmFK19o34iixlTV4O6Ai5PvdG0g/exec";
+
+    const desktopURL =
+      "https://script.google.com/macros/s/AKfycbzYD8MQaeRJbhoqpJCD2IsJlmkCu1vQqxn3hK9k1fJfnG-ndACzDqOnKG730rwx8Fp8/exec";
+
+    const isMobile = /Android|iPhone|iPod|Mobile/i.test(
+      navigator.userAgent
+    );
+
+    window.location.replace(
+      isMobile ? mobileURL : desktopURL
+    );
+  </script>
+</head>
+
+<body>
+  <p>Opening LC12SSC Response Boat Portal...</p>
+  <p>
+    <a href="https://script.google.com/macros/s/AKfycbycK_adgVu5gP7IocAo19ok1vnmu7sQJYLDE8YZqiSgmFK19o34iixlTV4O6Ai5PvdG0g/exec">
+      Open Mobile Portal
+    </a>
+  </p>
+  <p>
+    <a href="https://script.google.com/macros/s/AKfycbzYD8MQaeRJbhoqpJCD2IsJlmkCu1vQqxn3hK9k1fJfnG-ndACzDqOnKG730rwx8Fp8/exec">
+      Open Desktop Portal
+    </a>
+  </p>
+</body>
+</html>
